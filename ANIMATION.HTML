@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB ANIMATION EXAM</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        header h1 {
+            font-size: 36px;
+        }
+        
+        /* CSS Logo (Static) */
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        
+        /* CSS Animated Graphics */
+        .animated-graphics {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #f06, #09f);
+            animation: spin 4s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Content Area Styles */
+        .content {
+            padding: 20px;
+        }
+        
+        /* CSS Animated Element */
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: #f06;
+            animation: moveLeftRight 2s ease-in-out infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes moveLeftRight {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(200px);
+            }
+        }
+        
+        /* CSS Non-animated Elements */
+        .non-animated-element {
+            width: 150px;
+            height: 150px;
+            background-color: #09f;
+            margin: 20px auto;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        /* CSS Icons, Social Media */
+        .social-icons {
+            font-size: 24px;
+            margin: 10px;
+        }
+        
+        /* CSS Animated Graphics – Background */
+        body {
+            background: repeating-linear-gradient(45deg, #333, #333 10px, #444 10px, #444 20px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WEB ANIMATION EXAM</h1>
+        <div class="logo"></div>
+        <div class="animated-graphics"></div>
+    </header>
+    
+    <div class="content">
+        <div class="animated-element"></div>
+        <div class="non-animated-element"></div>
+        <div class="non-animated-element"></div>
+    </div>
+    
+    <footer>
+        <div class="social-icons">📷</div>
+        <div class="social-icons">🐦</div>
+        <div class="social-icons">📘</div>
+    </footer>
+</body>
+</html>
